@@ -8,7 +8,10 @@ const defaultData = {
   nome: '',
   sobrenome: '',
   email: '',
-  telefone: ''
+  telefone: '',
+  CEP: '',
+  endereco1: '',
+  endereco2:'',
 }
 
 const steps = [
