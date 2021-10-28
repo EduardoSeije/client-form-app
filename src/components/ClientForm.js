@@ -24,14 +24,16 @@ export const ClientForm = () => {
     initialStep: 0,
   });
 
+  const props = { formData, setForm, navigation};
+
   // eslint-disable-next-line default-case
   switch(step.id) {
     case 'personalInfo':
-      return <PersonalInfo />;
+      return <PersonalInfo {...props} />;
     case 'addressInfo':
-      return <AddressInfo />
+      return <AddressInfo {...props} />
     case 'personalInfoII':
-      return <PersonalInfoII />
+      return <PersonalInfoII {...props} />
   }  
 
   return (
