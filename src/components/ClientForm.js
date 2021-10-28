@@ -5,10 +5,10 @@ import { AddressInfo } from './stepForm/AddressInfo';
 import { PersonalInfoII } from './stepForm/PersonalInfoII';
 
 const defaultData = {
-  Nome: '',
-  Sobrenome: '',
-  Email: '',
-  Telefone: ''
+  nome: '',
+  sobrenome: '',
+  email: '',
+  telefone: ''
 }
 
 const steps = [
