@@ -1,9 +1,10 @@
 import React from 'react';
+import { ClientForm } from './components/ClientForm';
 
 function App() {
   return (
     <div className="App">
-      <h1>Client form</h1>
+      <ClientForm />
     </div>
   );
 }
