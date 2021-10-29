@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router';
 import { ClientForm } from './components/ClientForm';
 import { Home } from './pages/Home';
 import { Clients } from './pages/Clients';
+import './app.css'
 
 function App() {
   return (

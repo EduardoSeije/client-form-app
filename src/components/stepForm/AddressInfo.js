@@ -3,14 +3,15 @@ import React from 'react'
 export const AddressInfo = ({formData, setForm, navigation}) => {
   const { CEP, endereco1, endereco2 } = formData;
   return (
-    <form>
+    <form className='addressInfoForm'>
+      <h1 className='addressInfoHeader'>Informações de endereço</h1>
       <label htmlFor='CEP'>CEP</label>
       <input
         type='number'
         name='CEP'
         value={CEP}
         onChange={setForm}
-        placeholder='Digite seu CEP'
+        placeholder='Somente números'
       />
       <label htmlFor='endereco1'>Endereço 1</label>
       <input
@@ -28,18 +29,22 @@ export const AddressInfo = ({formData, setForm, navigation}) => {
         onChange={setForm}
         placeholder='Complemento'
       />
-      <button
-        type='button'
-        onClick={ () => navigation.previous()}
-      >
-        Voltar
-      </button>
-      <button 
-        type='button'
-        onClick={ () => navigation.next() }
-      >
-        Próximo
-      </button>
+      <div className='addressInfoBtns'>
+        <button
+          type='button'
+          onClick={ () => navigation.previous()}
+          className='btn btn-danger'
+          >
+          Voltar
+        </button>
+        <button 
+          type='button'
+          onClick={ () => navigation.next() }
+          className='nextBtn2 btn btn-success'
+          >
+          Próximo
+        </button>
+      </div>
     </form>
   )
 }

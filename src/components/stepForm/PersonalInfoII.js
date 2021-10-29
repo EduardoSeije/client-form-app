@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
-import { useForm } from 'react-hooks-helper';
-
 import { ClientContext } from '../../Context/provider';
+import { NewClientButton } from '../buttons/NewClientButton';
 
 const defaultData = {
   nome: '',
@@ -16,16 +15,17 @@ const defaultData = {
   rendaMes: ''
 };
 
-export const PersonalInfoII = ({ formData }) => {
+export const PersonalInfoII = ({ formData, setForm, navigation }) => {
   const { dataNasc, CPF, rendaMes } = formData;
-  const { clients, setClients } = useContext(ClientContext);
-  const [setForm] = useForm([]);
-  const clientsList = [];
+  const { setClients } = useContext(ClientContext);
   const handleClick =  () => {
-    clientsList.push(formData)
-    setForm(defaultData);
+    let clientListTest = [];
+    clientListTest.cliente = formData;
+    setClients(clientListTest);
+    formData = defaultData;
+    navigation.go(0);
   };
-  
+
   return (
     <form>
       <label htmlFor='dataNasc'>Data de nascimento</label>
@@ -34,7 +34,7 @@ export const PersonalInfoII = ({ formData }) => {
         name='dataNasc'
         value={dataNasc}
         onChange={setForm}
-        placeholder='Digite sua data de nascimento'
+        placeholder='dd/mm/aaaa'
       />
     <label htmlFor='CPF'>CPF</label>
       <input
@@ -42,7 +42,7 @@ export const PersonalInfoII = ({ formData }) => {
         name='CPF'
         value={CPF}
         onChange={setForm}
-        placeholder='Digite seu CPF'
+        placeholder='Somente números'
       />
       <label htmlFor='rendaMes'>Renda Mensal</label>
       <input
@@ -58,6 +58,7 @@ export const PersonalInfoII = ({ formData }) => {
       >
         Salvar
       </button>
+      <NewClientButton />
     </form>
   )
 }

@@ -1,48 +1,60 @@
 import React from 'react';
+import { ClientsButton } from '../buttons/ClientsButton';
 
 export const PersonalInfo = ({formData, setForm, navigation}) => {
   const {nome, sobrenome, email, telefone } = formData;
+  
   return (
-    <form>
-      <h1>Informações pessoais</h1>
-      <label htmlFor='nome'>Nome</label>
+    <form className='personalInfoForm'>
+      <h1 className='personalInfoHeader'>Informações pessoais</h1>
+      <label htmlFor='nome' className='nameLabel'>Nome</label>
       <input
         type='text'
         name='nome'
+        className='nameInput'
         value={nome}
         onChange={setForm}
-        placeholder='Digite seu nome' 
+        placeholder='  Digite seu nome' 
       />
-      <label htmlFor='sobrenome'>Sobrenome</label>
+      
+      <label htmlFor='sobrenome' className='lastNameLabel'>Sobrenome</label>
       <input
         type='text'
         name='sobrenome'
+        className='lastNameInput'
         value={sobrenome}
         onChange={setForm}
-        placeholder='Digite seu sobrenome'
+        placeholder='  Digite seu sobrenome'
       />
-      <label htmlFor='email'>E-mail</label>
+      <label htmlFor='email' className='emailLabel'>E-mail</label>
       <input
         type='text'
         name='email'
+        className='emailInput'
         value={email}
         onChange={setForm}
-        placeholder='Digite seu melhor e-mail'
+        placeholder='  Digite seu melhor e-mail'
       />
-      <label htmlFor='telefone'>Telefone</label>
+      <label htmlFor='telefone' className='phoneLabel'>Telefone</label>
       <input
         type='tel'
         name='telefone'
+        className='phoneInput'
         value={telefone}
         onChange={setForm}
-        placeholder='Digite seu telefone'
+        placeholder='  0xx-xxxxx-xxxx'
       />
-      <button
-        type='button'
-        onClick={() => navigation.next()}
-      >
-        Próximo
-      </button>
+      <div className='personalInfoBtns'>
+        <ClientsButton />
+        <button
+          type='button'
+          onClick={() => navigation.next()}
+          className='nextBtn btn btn-success'
+          >
+          Próximo
+        </button>
+        
+      </div>
     </form>
   )
 }

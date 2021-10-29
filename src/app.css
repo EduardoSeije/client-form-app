@@ -1,0 +1,126 @@
+/* Configurações iniciais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1496115965489-21be7e6e59a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+}
+
+/* Configuração da Page Home */
+.homeMessage {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  margin-top: 30px;
+  color: whitesmoke;
+  background-color: rgb(23, 32, 27);
+}
+
+.newClientBtn {
+  margin-left: 10px;
+}
+
+.clientsBtn {
+  margin-left: 10px;
+}
+
+/* Configuração do componente PersonalInfo */
+
+.personalInfoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.nextBtn {
+  width: 90px;
+  margin-left: 10px;
+}
+
+.personalInfoHeader{
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(23, 32, 27);
+  margin-top: 10px;
+}
+
+.nameLabel {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.nameInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.lastNameLabel {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.lastNameInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.emailLabel {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.emailInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.phoneLabel {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.phoneInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.personalInfoBtns {
+  margin-top: 20px;
+}
+
+/* Configuração do componente AddressInfo */
+
+.addressInfoForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.addressInfoHeader {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(23, 32, 27);
+  margin-top: 10px;
+}
+
+.addressInfoBtns {
+  margin-top: 20px;
+}
+
+.nextBtn2 {
+  margin-left: 10px;
+}

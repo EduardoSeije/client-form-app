@@ -1,21 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { ClientsButton } from '../components/buttons/ClientsButton';
+import { NewClientButton } from '../components/buttons/NewClientButton';
 
 export const Home = () => {
   return (
-    <div>
-      <h1> Home Page </h1>
-      <nav>
-        <Link to='/clientform' >
-          <button type='button'>
-            Cadastrar novo cliente
-          </button>
-        </Link>
-        <Link to='/clientslist'>
-          <button type='button'>
-            Lista de clientes
-          </button>
-        </Link>
+    <div className="text-xl">
+      <h1 className='homeMessage'> Bem vindo(a) nossa págia de clientes </h1>
+      <nav className='landingPageNav'>
+        <NewClientButton className='newClientBtnHome'/>
+        <ClientsButton className='clientsBtnHome'/>
       </nav>
     </div>
   );
