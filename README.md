@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# Client Form App
+
+Aplicação desenvolvida utilizando React.JS, JavaScript, HTML, CSS, Context API e BOotstrap. 
+
+## A Aplicação tem por finalidade a apresentação de uma págia inicial com um Nav contendo a opção de cadastrar um novo cliente e consultar a lista de clientes. 
+
+## Ao clicar em cadastrar, o usuário é redirecionado para um multistep Form onde irá preencher as informações para o cadastro de novo cliente. 
+
+## Ao clicar em cliente, somente o nome do cliente é exibido, e ao clicar sobre o nome do cliente, as demais informações aparecem.
+
+## Em razão do curto espaço de tempo, o projeto não foi elaborado utilizando TDD, e os testes unitários ainda serão aplicados utilizando Jest e RTL. 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
