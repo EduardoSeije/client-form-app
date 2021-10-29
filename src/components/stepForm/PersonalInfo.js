@@ -1,5 +1,6 @@
 import React from 'react';
 import { ClientsButton } from '../buttons/ClientsButton';
+import { HomeButton } from '../buttons/HomeButton';
 
 export const PersonalInfo = ({formData, setForm, navigation}) => {
   const {nome, sobrenome, email, telefone } = formData;
@@ -46,14 +47,14 @@ export const PersonalInfo = ({formData, setForm, navigation}) => {
       />
       <div className='personalInfoBtns'>
         <ClientsButton />
+        <HomeButton />        
         <button
           type='button'
           onClick={() => navigation.next()}
           className='nextBtn btn btn-success'
-          >
+        >
           Próximo
         </button>
-        
       </div>
     </form>
   )

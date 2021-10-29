@@ -24,6 +24,10 @@ body {
   margin-left: 10px;
 }
 
+.homeBtn {
+  margin-left: 10px;
+}
+
 .clientsBtn {
   margin-left: 10px;
 }
@@ -117,10 +121,137 @@ body {
   margin-top: 10px;
 }
 
+.cepLabel{
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.cepInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.add1Label {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.add1Input {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.add2Label{
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.add2Input {
+  width: 250px;
+  border-radius: 20px;
+}
+
 .addressInfoBtns {
   margin-top: 20px;
 }
 
 .nextBtn2 {
   margin-left: 10px;
+}
+
+/* Configuração do componente PersonalInfoII */
+
+.personalInfoIIForm {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.personalInfoIIHeader {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(23, 32, 27);
+  margin-top: 10px;
+}
+
+.birthDateLabel{
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.birthDateInput{
+  width: 250px;
+  border-radius: 20px;
+}
+
+.cpfLabel{
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.cpfInput{
+  width: 250px;
+  border-radius: 20px;
+}
+
+.proftLabel {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  margin-top: 5px;
+}
+
+.proftInput {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.saveBtn {
+  margin-top: 10px;
+}
+
+/* Configuração da Pag Clients */
+
+.clientsDiv{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.clientsHeader {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(23, 32, 27);
+  margin-top: 10px;
+}
+
+.clientsName {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: rgb(23, 32, 27);
+  margin-top: 10px;
+}
+
+.clientsInfoHidden p {
+  color:whitesmoke;
+  background-color: rgb(23, 32, 27);
+  visibility: hidden;
+}
+
+.clientsInfoNotHidden p {
+  color:whitesmoke;
+  background-color: rgb(23, 32, 27);
 }

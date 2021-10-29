@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { ClientContext } from '../../Context/provider';
-import { NewClientButton } from '../buttons/NewClientButton';
 
 const defaultData = {
   nome: '',
@@ -27,38 +26,42 @@ export const PersonalInfoII = ({ formData, setForm, navigation }) => {
   };
 
   return (
-    <form>
-      <label htmlFor='dataNasc'>Data de nascimento</label>
+    <form className='personalInfoIIForm'>
+      <h1 className='personalInfoIIHeader'>Informações pessoais II</h1>
+      <label htmlFor='dataNasc' className='birthDateLabel'>Data de nascimento</label>
       <input
         type='data'
         name='dataNasc'
+        className='birthDateInput'
         value={dataNasc}
         onChange={setForm}
-        placeholder='dd/mm/aaaa'
+        placeholder='  dd/mm/aaaa'
       />
-    <label htmlFor='CPF'>CPF</label>
+    <label htmlFor='CPF' className='cpfLabel'>CPF</label>
       <input
         type='number'
         name='CPF'
+        className='cpfInput'
         value={CPF}
         onChange={setForm}
-        placeholder='Somente números'
+        placeholder='  Somente números'
       />
-      <label htmlFor='rendaMes'>Renda Mensal</label>
+      <label htmlFor='rendaMes' className='proftLabel'>Renda Mensal</label>
       <input
         type='number'
         name='rendaMes'
+        className='proftInput'
         value={rendaMes}
         onChange={setForm}
-        placeholder='Digite sua renda mensal'
+        placeholder='  Digite sua renda mensal'
       />
        <button
         type='button'
         onClick={handleClick}
+        className='saveBtn btn btn-success'
       >
         Salvar
       </button>
-      <NewClientButton />
     </form>
   )
 }
