@@ -1,6 +1,7 @@
 import React from 'react'
 import { ClientsButton } from '../components/buttons/ClientsButton';
 import { NewClientButton } from '../components/buttons/NewClientButton';
+import { Contact } from '../components/contact/Contact';
 
 export const Home = () => {
   return (
@@ -10,6 +11,9 @@ export const Home = () => {
         <NewClientButton className='newClientBtnHome'/>
         <ClientsButton className='clientsBtnHome'/>
       </nav>
+      <div className='contactDiv'>
+        <Contact />
+      </div>
     </div>
   );
 };
