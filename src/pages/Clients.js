@@ -16,7 +16,7 @@ export const Clients = () => {
       <h1 className="clientsHeader">Lista de Clientes</h1>
       {clientToMap.map((cliente) => {
         return (
-          <div>
+          <div key={cliente.cliente.cpf}>
             <button onClick={handleToggle} className='clientListBtn'>
               <h2 className="clientsName">{`${cliente.cliente.nome} ${cliente.cliente.sobrenome}`}</h2>
             </button>
