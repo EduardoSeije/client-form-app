@@ -6,8 +6,7 @@ export const Clients = () => {
   const [isHidden, setIsHidden] = useState('true');
   const { clients } = useContext(ClientContext);
   let clientToMap = [clients];
-  console.log(clientToMap);
-  
+   
   const handleToggle = () => {
     setIsHidden(!isHidden);
   };
@@ -15,8 +14,7 @@ export const Clients = () => {
   return (
     <div className="clientsDiv">
       <h1 className="clientsHeader">Lista de Clientes</h1>
-      {console.log(clientToMap)}
-      {clientToMap.length === 1 ? <h1 className='noClientMsg'>Sem clientes cadastrados</h1>: clientToMap.map((cliente) => {
+      {clientToMap.map((cliente) => {
         return (
           <div>
             <button onClick={handleToggle} className='clientListBtn'>
