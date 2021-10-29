@@ -29,7 +29,7 @@ export const PersonalInfo = ({formData, setForm, navigation}) => {
         onChange={setForm}
         placeholder='Digite seu melhor e-mail'
       />
-      <label htmlFor='telefone'>Nome</label>
+      <label htmlFor='telefone'>Telefone</label>
       <input
         type='tel'
         name='telefone'

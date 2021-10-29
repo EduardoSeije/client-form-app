@@ -12,22 +12,27 @@ const defaultData = {
   CEP: '',
   endereco1: '',
   endereco2:'',
-}
+  dataNasc:'',
+  CPF: '',
+  rendaMes: ''
+};
 
 const steps = [
   {id : 'personalInfo'},
   {id : 'addressInfo'},
   {id : 'personalInfoII'},
-]
+  {id : 'review'}
+];
 
 export const ClientForm = () => {
   const [formData, setForm] = useForm(defaultData);
+
   const { step, navigation } = useStep({
     steps,
     initialStep: 0,
   });
 
-  const props = { formData, setForm, navigation};
+  const props = { formData, setForm, navigation };
 
   // eslint-disable-next-line default-case
   switch(step.id) {
